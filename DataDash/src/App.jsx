@@ -15,7 +15,7 @@ function App() {
       if (itemCount > 0) {
         setErrorMessage('');
         try {
-          const response = await fetch(`https://api.nasa.gov/planetary/apod?count=${itemCount}&thumbs=true&api_key=lXUWD7fdnlR8Jigje2V0gAUAC8FpkDucFqdqrN57`);
+          const response = await fetch(`https://api.nasa.gov/planetary/apod?count=${itemCount}&thumbs=true&api_key=yourkey`);
           const data = await response.json();
           setDashBoardData(data);
         } catch (error) {
